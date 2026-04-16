@@ -1,0 +1,581 @@
+
+@font-face {
+        font-family: 'tan pearl'; /* Um nome para usar a fonte */
+        src: url('../fonte/fonnts.com-tan-pearl.otf'); /* O caminho para o arquivo da fonte */
+    }
+    body {
+      background: #ebe3d5;
+    }
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #ebe3d5;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #eae0ff;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 40px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    z-index: 10;
+}
+.navbar-brand span {
+    color: #00332c;
+    font-family: 'Tan Pearl', serif;
+    font-size: 22px;
+    margin-left: 5px;
+    font-weight: 300;       
+    letter-spacing: 1px;   }
+
+
+
+.nav-right a {
+    text-decoration: none; /* Remove a linha */
+    color: #00332c;
+    font-family: 'Tan Pearl', serif;
+    font-size: 15px;
+    margin-right: 70px;
+    transition: color 0.3s ease;
+}
+
+
+/* Container Principal */
+.container {
+    max-width: 1400px;
+    margin: 120px auto 60px;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.08);
+}
+
+.container h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 32px;
+    color: #584316;
+    font-family: 'Tan Pearl', serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.container h2 i {
+    margin-right: 15px;
+    color: #9ba885;
+}
+
+/* Grid de Métricas */
+.metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.metric-card {
+    background: #f9f5ef;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #e9e1d5;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.metric-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    background: #fffdf9;
+}
+
+.metric-icon {
+    width: 60px;
+    height: 60px;
+    background: #9ba885;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+}
+
+.metric-info h3 {
+    font-size: 14px;
+    color: #8a7f6e;
+    margin-bottom: 5px;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.metric-value {
+    font-size: 24px;
+    font-weight: bold;
+    color: #584316;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Grid de Análises */
+.analytics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.analytics-card {
+    background: #f9f5ef;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #e9e1d5;
+}
+
+.analytics-card h3 {
+    color: #584316;
+    margin-bottom: 20px;
+    font-family: 'Tan Pearl', serif;
+    font-size: 18px;
+    border-bottom: 1px solid #e9e1d5;
+    padding-bottom: 10px;
+}
+
+.analytics-card h3 i {
+    margin-right: 10px;
+    color: #9ba885;
+}
+
+/* Tabelas */
+.table-container {
+    background: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #e9e1d5;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.table th {
+    background: #9ba885;
+    color: white;
+    padding: 12px 15px;
+    text-align: left;
+    font-weight: 600;
+    font-family: 'Tan Pearl', serif;
+}
+
+.table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #f0e9df;
+    color: #5a5240;
+}
+
+.table tbody tr:hover {
+    background: #fffdf9;
+}
+
+/* Badges de Categoria */
+.categoria-badge {
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-style: italic;
+    border: 1px solid;
+}
+
+.categoria-flor {
+    background: rgba(155, 168, 133, 0.1);
+    color: #556b2f;
+    border-color: rgba(85, 107, 47, 0.3);
+}
+
+.categoria-buque {
+    background: rgba(139, 69, 19, 0.1);
+    color: #8b4513;
+    border-color: rgba(139, 69, 19, 0.3);
+}
+
+.categoria-embalagem {
+    background: rgba(88, 67, 22, 0.1);
+    color: #584316;
+    border-color: rgba(88, 67, 22, 0.3);
+}
+
+.categoria-laço {
+    background: rgba(106, 90, 205, 0.1);
+    color: #6a5acd;
+    border-color: rgba(106, 90, 205, 0.3);
+}
+
+/* Métodos de Pagamento */
+.payment-methods {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.payment-method {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    background: white;
+    border-radius: 8px;
+    border: 1px solid #e9e1d5;
+}
+
+.payment-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.payment-type {
+    font-weight: bold;
+    color: #584316;
+    text-transform: capitalize;
+}
+
+.payment-count {
+    font-size: 12px;
+    color: #8a7f6e;
+}
+
+.payment-amount {
+    font-weight: bold;
+    color: #556b2f;
+}
+
+/* Vendas Mensais */
+.monthly-sales {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.month-sale {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.month-name {
+    min-width: 70px;
+    font-weight: bold;
+    color: #584316;
+}
+
+.sale-bar-container {
+    flex: 1;
+    height: 20px;
+    background: #e9e1d5;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.sale-bar {
+    height: 100%;
+    background: linear-gradient(90deg, #9ba885, #8a9c7a);
+    border-radius: 10px;
+    transition: width 0.5s ease;
+}
+
+.sale-amount {
+    min-width: 100px;
+    text-align: right;
+    font-weight: bold;
+    color: #556b2f;
+}
+
+/* Clientes Frequentes */
+.top-customers {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.customer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    background: white;
+    border-radius: 8px;
+    border: 1px solid #e9e1d5;
+}
+
+.customer-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.customer-name {
+    font-weight: bold;
+    color: #584316;
+}
+
+.customer-email {
+    font-size: 12px;
+    color: #8a7f6e;
+}
+
+.customer-stats {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.customer-orders {
+    font-size: 12px;
+    color: #8a7f6e;
+}
+
+.customer-total {
+    font-weight: bold;
+    color: #556b2f;
+}
+
+/* Estoque Baixo */
+.low-stock {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.stock-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    background: white;
+    border-radius: 8px;
+    border: 1px solid #e9e1d5;
+    border-left: 4px solid #d4c9b8;
+}
+
+.stock-item.critical {
+    border-left-color: #8b4513;
+    background: rgba(139, 69, 19, 0.05);
+}
+
+.stock-item.low {
+    border-left-color: #8a9c7a;
+}
+
+.stock-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-name {
+    font-weight: bold;
+    color: #584316;
+}
+
+.product-category {
+    font-size: 12px;
+    color: #8a7f6e;
+    text-transform: capitalize;
+    font-style: italic;
+}
+
+.stock-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.stock-quantity {
+    font-weight: bold;
+    color: #8b4513;
+}
+
+.stock-price {
+    font-size: 12px;
+    color: #8a7f6e;
+}
+
+/* Estatísticas de Categoria */
+.category-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.category-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.category-name {
+    min-width: 100px;
+    font-weight: bold;
+    color: #584316;
+    text-transform: capitalize;
+}
+
+.category-bar-container {
+    flex: 1;
+    height: 15px;
+    background: #e9e1d5;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.category-bar {
+    height: 100%;
+    background: linear-gradient(90deg, #9ba885, #8a9c7a);
+    border-radius: 8px;
+    transition: width 0.5s ease;
+}
+
+.category-revenue {
+    min-width: 100px;
+    text-align: right;
+    font-weight: bold;
+    color: #556b2f;
+}
+
+/* Seção de Resumo */
+.summary-section {
+    background: #f9f5ef;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #e9e1d5;
+}
+
+.summary-section h3 {
+    color: #584316;
+    margin-bottom: 20px;
+    font-family: 'Tan Pearl', serif;
+    font-size: 18px;
+    border-bottom: 1px solid #e9e1d5;
+    padding-bottom: 10px;
+}
+
+.summary-section h3 i {
+    margin-right: 10px;
+    color: #9ba885;
+}
+
+.summary-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.summary-item {
+    text-align: center;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    border: 1px solid #e9e1d5;
+}
+
+.summary-label {
+    display: block;
+    font-size: 14px;
+    color: #8a7f6e;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.summary-value {
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    color: #584316;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Text Center */
+.text-center {
+    text-align: center;
+    color: #8a7f6e;
+    padding: 20px;
+    font-style: italic;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        margin: 100px 15px 40px;
+        padding: 25px;
+    }
+    
+    .metrics-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .analytics-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .navbar {
+        padding: 12px 20px;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .nav-right {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .nav-right a {
+        margin-right: 0;
+        font-size: 14px;
+        text-align: center;
+    }
+    
+    .container h2 {
+        font-size: 26px;
+    }
+    
+    .metric-card {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    .month-sale,
+    .category-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+    
+    .sale-bar-container,
+    .category-bar-container {
+        width: 100%;
+    }
+}
+
+/* Animações */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.metric-card,
+.analytics-card,
+.summary-section {
+    animation: fadeIn 0.6s ease-out;
+}

@@ -1,0 +1,80 @@
+@font-face {
+        font-family: 'tan pearl'; /* Um nome para usar a fonte */
+        src: url('../fonte/fonnts.com-tan-pearl.otf'); /* O caminho para o arquivo da fonte */
+    }
+    body {
+      background: #ebe3d5;
+    }
+    .navbar {
+      background-color: #eae0ff !important;
+    }
+    .navbar-brand.d-flex.align-items-center span {
+      color: #584316 !important;
+      font-weight: bold;
+      font-size: 1rem !important;
+      margin-top: 3px;
+    }
+    .navbar-brand img {
+      width: 50px;
+      height: auto;
+      vertical-align: middle;
+    }
+    .dashboard, .dashboard .section-title, .dashboard .card h5, .dashboard .card i, .dashboard .nav-link, .dashboard .col-md-4, .dashboard h4, .dashboard h2, .dashboard h5, .dashboard label, .dashboard input, .dashboard select, .dashboard .badge, .dashboard .card {
+      color: #584316 !important;
+    }
+    .nav-link-marrom {
+      color: #00332c !important;
+    }
+    .dashboard {
+      padding: 100px 20px 40px;
+      max-width: 1200px;
+      margin: auto;
+      background: #eae0ff;
+      border-radius: 16px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+    }
+    .dashboard .section-title {
+      font-size: 2rem;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .dashboard .card {
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s;
+    }
+    .dashboard .card:hover {
+      transform: translateY(-5px);
+    }
+    .dashboard .card i {
+      font-size: 40px;
+    }
+    .dashboard .card h5 {
+      margin-top: 10px;
+    }
+    .search-bar {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 40px;
+    }
+    .search-bar input {
+      width: 100%;
+      max-width: 500px;
+      padding: 10px;
+      border: 2px solid #4bb9a5;
+      border-radius: 8px;
+    }
+    .badge {
+      font-size: 0.75rem;
+      padding: 5px 10px;
+      border-radius: 12px;
+    }
+    .tan-pearl {
+      font-family: 'tan pearl', serif !important;
+    }
+    @media (max-width: 768px) {
+      .dashboard .col-md-4 {
+        margin-bottom: 20px;
+      }
+    }

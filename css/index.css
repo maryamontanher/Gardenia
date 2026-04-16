@@ -1,0 +1,463 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+ 
+    @font-face {
+        font-family: 'tan pearl'; /* Um nome para usar a fonte */
+        src: url('../fonte/fonnts.com-tan-pearl.otf'); /* O caminho para o arquivo da fonte */
+    }
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    padding-top: 70px;
+  }
+  .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #9ba885;
+  padding: 10px 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 70px;
+  width: 100%;
+  z-index: 1000;
+  font-family: 'tan pearl', sans-serif;
+}
+.nav-left ul {
+  list-style: none;
+  display: flex;     
+  gap: 20px;          /* espaço entre os links */
+  margin: 0;
+  padding: 0;
+}
+
+
+.nav-left a, .nav-right a {
+  color: #584316;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.nav-left a:hover, .nav-right a:hover {
+  color: #584316;
+}
+
+.nav-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-center .logo {
+  width: 60px;
+  margin-bottom: 2px;
+}
+
+
+  /* ---------- Hero Section ---------- */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;      /* Centraliza verticalmente */
+  justify-content: center;  /* Centraliza horizontalmente */
+  color: #584316;
+  overflow: hidden;
+  text-align: center;       /* Centraliza texto */
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+}
+
+.content h1 {
+  margin-top: 60px;
+  font-family: 'tan pearl', sans-serif;
+  font-size: 100px;
+  margin-bottom: 20px;
+}
+
+.content p {
+  font-size: 40px;
+  margin-bottom: 50px;
+  line-height: 1.5;
+}
+
+.hero-btn {
+  background-color: #9ba885;
+  color: #584316;
+  padding: 12px 70px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hero-btn:hover {
+  background-color: #828a72;
+}
+
+  /* ---------- Contato ---------- */
+  .contact-section {
+    width: 100%;
+    padding: 80px;
+    background-color: #eae0ff;
+    text-align: center;
+  }
+  
+  .contact-section h2 {
+    
+    font-family: 'tan pearl', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #584316;
+  }
+  
+  .contact-section p {
+    color: #666;
+    margin-bottom: 40px;
+  }
+  
+  .form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .form-row input,
+  textarea {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  .form-row input {
+    flex: 1;
+  }
+  
+  textarea {
+    width: 100%;
+    resize: vertical;
+    margin-bottom: 29px;
+  }
+  
+  .contact-btn {
+    background-color: #9ba885;
+    color: #584316;
+    padding: 8px 60px;
+    border: none;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  
+  }
+  
+  .contact-btn:hover {
+    background-color: #828a72;
+  }
+  
+  /* ---- Rodapé do final ---- */
+  .footer {
+    background-color: #ebe3d5;
+    color: #584316;
+    padding: 40px 20px;
+    width: 100%;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .footer-logo img {
+    width: 50px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .footer-logo p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  
+  .footer-box {
+    padding: 0 50px;
+  }
+  
+  .footer-box:not(:first-child) {
+    border-left: 1px solid #ffffff66;
+  }
+  
+  .footer-contato h4,
+  .footer-redes h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-contato p,
+  .footer-redes a {
+    font-size: 15px;
+    color: #584316;
+    text-decoration: none;
+    margin-bottom: 8px;
+    display: block;
+  }
+  
+  .footer-redes a:hover {
+    text-decoration: underline;
+  }
+  .content {
+    position: relative;
+    z-index: 1;
+    max-width: 600px;
+  }
+  
+  .content h1 {
+    font-size: 80px;
+    margin-bottom: 25px;
+
+  }
+  
+  .content p {
+    font-size: 40px;
+    margin-bottom: 50px;
+    line-height: 1.5;
+  }
+  .beneficios {
+    background-color: #eae0ff;
+    width: 100%;
+    padding: 80px;
+    text-align: center;
+  }
+  
+  .beneficios h2 {
+    font-size: 2.5rem;
+    color: #584316;
+    margin-bottom: 50px;
+    font-family: 'tan pearl';
+  }
+  
+  .beneficios-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .beneficios .card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    padding: 30px 20px;
+    max-width: 300px;
+    transition: transform 0.3s;
+    border-top: 5px solid #9ba885;
+  }
+  
+  .beneficios .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .beneficios .card h3 {
+    font-size: 1.5rem;
+    color: #9ba885;
+    margin-bottom: 15px;
+  }
+  
+  .beneficios .card p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  .beneficios .card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px 10px 10px 10px;
+    margin-bottom: 20px;
+  }
+  #carouselExampleFade {
+    width: 100%;
+    height: 50vh; /* metade da altura da tela */
+    overflow: hidden;
+  }
+
+  #carouselExampleFade .carousel-item {
+    height: 100%;
+  }
+
+  #carouselExampleFade img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* garante que a imagem cubra o espaço sem distorcer */
+  }
+  #carouselExampleFade {
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .carousel-inner,
+  .carousel-item {
+    height: 100%;
+  }
+
+  .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* evita que a imagem estique */
+  }
+
+  /* Filtro cinza escuro */
+  .carousel-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* filtro escuro transparente */
+    z-index: 1;
+  }
+
+  /* Legenda no topo do filtro */
+  .carousel-caption {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+  }
+  .carousel-caption {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-family: 'TAN Pearl', serif;
+  }
+
+  .carousel-caption h3 {
+    font-size: 2.5rem;
+  }
+
+  .carousel-caption p {
+    font-size: 1.2rem;
+  }
+ /* ---------- Seção "Nossa História" com fundo bege em tela cheia ---------- */
+.promise-section {
+  width: 100%;
+  background-color: #fdf6e9; /* Bege claro em toda a largura */
+  padding: 100px 20px;
+  font-family: 'tan pearl', sans-serif;
+}
+
+.promise-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #eae0ff; /* Cor lilás do container */
+  border-radius: 20px;
+  padding: 60px 40px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+/* Título */
+.promise-title {
+  font-size: 2.8rem;
+  color: #8c763d;
+  margin-bottom: 30px;
+  font-style: italic;
+}
+
+.promise-title span {
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Texto */
+.promise-desc-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #4a4a4a;
+  margin-bottom: 40px;
+  font-family: Arial, sans-serif;
+}
+
+/* Botão */
+.promise-actions .promise-btn {
+  background-color: #d3c3e3;
+  color: #5e4b18;
+  font-size: 1.2rem;
+  padding: 10px 40px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.promise-actions .promise-btn:hover {
+  background-color: #c0abd9;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .promise-title {
+    font-size: 2rem;
+  }
+
+  .promise-desc-text {
+    font-size: 1rem;
+  }
+
+  .promise-actions .promise-btn {
+    font-size: 1rem;
+    padding: 8px 30px;
+  }
+}
+
+  

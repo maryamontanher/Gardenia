@@ -1,0 +1,287 @@
+@font-face {
+  font-family: 'tan pearl';
+  src: url('../fonte/fonnts.com-tan-pearl.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Container externo para centralizar e destacar o formulário */
+.main-form-bg {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+    max-width: 900px;
+    margin: 48px auto;
+    padding: 32px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background:#fdf6f0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 60px;
+}
+
+.container {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    color: #584316;
+    margin-bottom: 30px;
+  font-family: 'tan pearl', serif;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.separando {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.separando > div {
+    flex: 1;
+    min-width: 300px;
+}
+
+label,
+.tamanho {
+    display: block;
+    margin-bottom: 5px;
+    color: #000;
+    font-weight: 500;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #7e8786;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #7e8786;
+}
+
+input[list]::-webkit-calendar-picker-indicator {
+    display: none; /* Remove setinha que pode aparecer no Chrome */
+}
+
+select {
+    background-color: #fff;
+}
+     
+
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #9ba885; 
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: #9ba885;
+}
+
+input[type="submit"]:hover {
+    background-color: #eae0ff;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #eae0ff !important;
+  padding: 0px 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 70px;
+  width: 100%;
+  z-index: 1000;
+}
+
+.logo img {
+    width: 120px;
+    background: no-repeat left center / contain;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: rgb(50, 97, 81);
+}
+@font-face {
+        font-family: 'tan pearl'; /* Um nome para usar a fonte */
+        src: url('../fonte/fonnts.com-tan-pearl.otf'); /* O caminho para o arquivo da fonte */
+    }
+    body {
+      background: #ebe3d5;
+    }
+/* Removido filtro/fundo lilás da navbar */
+    .navbar-brand.d-flex.align-items-center span {
+      color: #584316 !important;
+      font-weight: bold;
+      font-size: 1rem !important;
+      margin-top: 3px;
+    }
+    .navbar-brand img {
+      width: 50px;
+      height: auto;
+      vertical-align: middle;
+    }
+    .dashboard, .dashboard .section-title, .dashboard .card h5, .dashboard .card i, .dashboard .nav-link, .dashboard .col-md-4, .dashboard h4, .dashboard h2, .dashboard h5, .dashboard label, .dashboard input, .dashboard select, .dashboard .badge, .dashboard .card {
+      color: #584316 !important;
+    }
+    .nav-link {
+      color: #584316 !important;
+    }
+    .dashboard {
+      padding: 100px 20px 40px;
+      max-width: 1200px;
+      margin: auto;
+      background: #eae0ff;
+      border-radius: 16px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+    }
+    .dashboard .section-title {
+      font-size: 2rem;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .dashboard .card {
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s;
+    }
+    .dashboard .card:hover {
+      transform: translateY(-5px);
+    }
+    .dashboard .card i {
+      font-size: 40px;
+    }
+    .dashboard .card h5 {
+      margin-top: 10px;
+    }
+    .search-bar {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 40px;
+    }
+    .search-bar input {
+      width: 100%;
+      max-width: 500px;
+      padding: 10px;
+      border: 2px solid #4bb9a5;
+      border-radius: 8px;
+    }
+    .badge {
+      font-size: 0.75rem;
+      padding: 5px 10px;
+      border-radius: 12px;
+    }
+    .tan-pearl {
+      font-family: 'tan pearl', serif !important;
+    }
+    @media (max-width: 768px) {
+      .dashboard .col-md-4 {
+        margin-bottom: 20px;
+      }
+    }
+    .hero-btn {
+  background-color: #9ba885;
+  color: #584316;
+  padding: 3px 10px;
+  border: none;
+  border-radius: 3px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.nav-right a {
+  color:#584316;
+  text-decoration: none;
+  
+}
+
+.nav-left a:hover,
+.nav-right a:hover {
+  color: #464d3c;
+}
+.nav-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-center img {
+  max-height: 60px;
+  width: auto;
+  display: block;
+  filter: drop-shadow(0 2px 4px #464d3c);
+}
+
+.nav-center .logo {
+  width: 50px;
+  height: auto;
+  vertical-align: middle;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-right .cart i {
+  font-size: 1.5rem;
+  color: #584316;
+  transition: color 0.3s;
+}
+
+.nav-right .cart i:hover {
+  color: #464d3c;
+}

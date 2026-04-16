@@ -1,0 +1,384 @@
+
+@font-face {
+        font-family: 'tan pearl'; /* Um nome para usar a fonte */
+        src: url('../fonte/fonnts.com-tan-pearl.otf'); /* O caminho para o arquivo da fonte */
+    }
+    body {
+      background: #ebe3d5;
+    }
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #ebe3d5;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #eae0ff;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px 40px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    z-index: 10;
+}
+.navbar-brand span {
+    color: #00332c;
+    font-family: 'Tan Pearl', serif;
+    font-size: 22px;
+    margin-left: 5px;
+    font-weight: 300;       
+    letter-spacing: 1px;   }
+
+
+
+.nav-right a {
+    text-decoration: none; /* Remove a linha */
+    color: #00332c;
+    font-family: 'Tan Pearl', serif;
+    font-size: 15px;
+    margin-right: 70px;
+    transition: color 0.3s ease;
+}
+
+/* Container Principal */
+.container {
+    max-width: 1200px;
+    margin: 120px auto 60px;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.08);
+}
+
+.container h2 {
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 32px;
+    color: #584316;
+    font-family: 'Tan Pearl', serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+/* Filtros */
+.filtro-container {
+    background: #f9f5ef;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    border: 1px solid #e9e1d5;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    align-items: end;
+}
+
+.filtro-container input,
+.filtro-container select {
+    padding: 14px 18px;
+    border: 1px solid #d4c9b8;
+    border-radius: 8px;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    transition: all 0.3s ease;
+    background: #ffffff;
+    color: #1a1a1a;
+    outline: none;
+}
+
+.filtro-container input:focus,
+.filtro-container select:focus {
+    border-color: #9ba885;
+    box-shadow: 0 0 0 3px rgba(155, 168, 133, 0.1);
+    background: #fffdf9;
+}
+
+.filtro-container input::placeholder {
+    color: #131313;
+    font-style: italic;
+}
+
+/* Tabela */
+.table-container {
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #e9e1d5;
+    margin-top: 20px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+    background-color: #fff;
+}
+
+.table thead {
+    background-color: #9ba885;
+    color: #fff;
+}
+
+.table th {
+    padding: 12px 15px;
+    text-align: center;
+    font-weight: 600;
+    font-family: 'Tan Pearl', serif;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid #8a9c7a;
+}
+
+.table td {
+    padding: 16px 15px;
+    text-align: center;
+    border-bottom: 1px solid #f0e9df;
+    transition: all 0.3s ease;
+}
+
+.table tbody tr {
+    transition: all 0.3s ease;
+}
+
+.table tbody tr:hover {
+    background-color: #f9f5ef;
+    transform: translateY(-1px);
+}
+
+/* Botões */
+.confirm-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: none;
+    letter-spacing: 0.5px;
+    min-width: 120px;
+}
+
+.confirm-btn:not(:disabled) {
+    background: #9ba885;
+    color: white;
+    border: 1px solid #8a9c7a;
+    box-shadow: 0 2px 8px rgba(155, 168, 133, 0.3);
+}
+
+.confirm-btn:not(:disabled):hover {
+    background: #8a9c7a;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(155, 168, 133, 0.4);
+}
+
+.confirm-btn:disabled {
+    background: #d4c9b8;
+    color: #8a7f6e;
+    cursor: not-allowed;
+    border: 1px solid #c8bcab;
+}
+
+/* Status */
+.status-pendente {
+    color: #8b4513;
+    font-weight: bold;
+    background: rgba(139, 69, 19, 0.1);
+    padding: 6px 12px;
+    border-radius: 15px;
+    display: inline-block;
+    font-style: italic;
+    border: 1px solid rgba(139, 69, 19, 0.2);
+}
+
+.status-concluido {
+    color: #556b2f;
+    font-weight: bold;
+    background: rgba(85, 107, 47, 0.1);
+    padding: 6px 12px;
+    border-radius: 15px;
+    display: inline-block;
+    font-style: italic;
+    border: 1px solid rgba(85, 107, 47, 0.2);
+}
+
+/* Badges para métodos de pagamento */
+.pagamento-badge {
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: lowercase;
+    font-style: italic;
+    border: 1px solid;
+}
+
+.pagamento-pix {
+    background: rgba(85, 107, 47, 0.1);
+    color: #556b2f;
+    border-color: rgba(85, 107, 47, 0.3);
+}
+
+.pagamento-boleto {
+    background: rgba(139, 69, 19, 0.1);
+    color: #8b4513;
+    border-color: rgba(139, 69, 19, 0.3);
+}
+
+.pagamento-cartao {
+    background: rgba(88, 67, 22, 0.1);
+    color: #584316;
+    border-color: rgba(88, 67, 22, 0.3);
+}
+
+/* Text Center */
+.text-center {
+    text-align: center;
+    color: #8a7f6e;
+    padding: 25px;
+    font-style: italic;
+}
+
+/* Loading Animation */
+@keyframes gentlePulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.7; }
+    100% { opacity: 1; }
+}
+
+.loading {
+    animation: gentlePulse 1.5s ease-in-out infinite;
+}
+
+/* Toast Notification */
+.toast {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    padding: 16px 24px;
+    border-radius: 8px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    z-index: 1001;
+    transform: translateX(400px);
+    transition: transform 0.4s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.toast.success {
+    background: #9ba885;
+    transform: translateX(0);
+}
+
+.toast.error {
+    background: #8b4513;
+    transform: translateX(0);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        margin: 100px 15px 40px;
+        padding: 25px;
+    }
+    
+    .filtro-container {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+    
+    .table-container {
+        overflow-x: auto;
+    }
+    
+    .table {
+        min-width: 800px;
+        font-size: 14px;
+    }
+    
+    .navbar {
+        padding: 12px 20px;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .nav-right a {
+        margin-right: 0;
+        font-size: 14px;
+    }
+    
+    .container h2 {
+        font-size: 26px;
+    }
+    
+    .table th,
+    .table td {
+        padding: 12px 10px;
+    }
+}
+
+/* Efeitos de foco suaves */
+input:focus, select:focus, button:focus {
+    outline: none;
+}
+
+/* Melhorias na legibilidade */
+.table td {
+    color: #5a5240;
+}
+
+.table th {
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para números e valores */
+td strong {
+    color: #584316;
+    font-weight: 600;
+}
+
+/* Hover states refinados */
+.filtro-container input:hover,
+.filtro-container select:hover {
+    border-color: #b8a98f;
+    background: #fffdf9;
+}
+
+/* Sombra suave na tabela */
+.table-container {
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Ajustes nos botões de confirmação */
+.confirm-btn {
+    font-size: 13px;
+    padding: 8px 16px;
+}
+
+/* Estilo para IDs */
+td:first-child {
+    font-weight: 600;
+    color: #584316;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Melhoria no visual dos filtros */
+.filtro-container {
+    background: linear-gradient(135deg, #f9f5ef 0%, #f0e9df 100%);
+}
+
+/* Ajustes de espaçamento */
+.table tbody tr:last-child td {
+    border-bottom: none;
+}

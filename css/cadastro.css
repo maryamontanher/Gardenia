@@ -1,0 +1,94 @@
+
+body {
+    font-family: Georgia, serif;
+    background-image: url('images/login.png'); /* Altere conforme o caminho correto */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px; /* maior largura pra caber 2 colunas */
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.84);
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(52, 82, 54, 0.5);
+}
+
+h1 {
+    text-align: center;
+    color: #000000;
+}
+
+form {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.col {
+    flex: 1 1 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    color: #000000;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: Georgia, serif;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #989bc6;
+    color: #000000;
+    cursor: pointer;
+    margin-top: 10px;
+    font-family: Georgia, serif;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(179, 182, 230);
+}
+
+.register-link {
+    text-align: center;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.register-link a {
+    color: blue;
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}

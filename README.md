@@ -50,7 +50,7 @@ A área administrativa foi projetada com foco em eficiência:
 
 ---
 
-## 🛠 Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 | Categoria         | Tecnologias               |
 |-------------------|---------------------------|
